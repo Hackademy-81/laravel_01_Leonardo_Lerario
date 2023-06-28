@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Squadrone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 
@@ -33,14 +33,14 @@
       </nav>
 
       <div class="container-fluid">
-        <div class="row">
+        <div class="row vh-100 background-custom">
             <div class="col-12">
                 <h1 class="text-center">U' Squadron</h1>
             </div>
         @foreach ($squadra as $user)
         <div class="col-4">
             <div class="card" style="width: 18rem;">
-                <img src="{{$user["img"]}}" class="card-img-top" alt="...">
+                <img src="{{$user["img"]}}" class="card-img-top dimension" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">{{$user["name"]}}</h5>
                   <p class="card-text">{{$user["descrizione"]}}</p>
